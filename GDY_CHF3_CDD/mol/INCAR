@@ -1,0 +1,30 @@
+CHF3 fragment - static SCF for charge density difference (no relaxation)
+ISTART = 0
+ICHARG = 2
+ISPIN  = 2
+MAGMOM = 5*0.0
+LREAL  = A
+ENCUT  = 500
+PREC   = Accurate
+ADDGRID= .TRUE.
+LWAVE  = .FALSE.
+LCHARG = .TRUE.
+KPAR   = 4
+NCORE  = 24
+
+# same FFT grid as the GDY+CHF3 complex CHGCAR (140 x 140 x 300)
+NGXF = 140
+NGYF = 140
+NGZF = 300
+
+ISMEAR = 0
+SIGMA  = 0.05
+NELM   = 200
+NELMIN = 6
+EDIFF  = 1E-06
+
+# static: atoms fixed exactly at the complex positions
+NSW    = 0
+IBRION = -1
+
+IVDW   = 11
